@@ -8,7 +8,8 @@
 
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.5.31"
+    id("org.jetbrains.kotlin.jvm") version "1.7.10"
+    id("io.freefair.lombok") version "6.5.0.2"
 
     // Apply the application plugin to add support for building a CLI application in Java.
     application
@@ -34,6 +35,16 @@ dependencies {
 
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+
+
+    implementation("com.google.guava:guava:31.1-jre")
+    implementation("org.apache.logging.log4j:log4j-core:2.19.0")
+    implementation("org.apache.logging.log4j:log4j-api:2.19.0")
+    implementation("org.apache.logging.log4j:log4j-slf4j-impl:2.19.0")
+
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.4")
+    implementation("org.yaml:snakeyaml:1.33")
+
 }
 
 application {
