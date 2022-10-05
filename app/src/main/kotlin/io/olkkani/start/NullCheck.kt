@@ -1,4 +1,4 @@
-package io.oikk.start
+package io.olkkani.start
 
 // NPE (NullPointerException) 안정성 체크하는 방법
 

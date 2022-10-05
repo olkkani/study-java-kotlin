@@ -1,4 +1,4 @@
-package io.oikk.start
+package io.olkkani.start
 // 코틀린은 자바와 다르게 클래스 밖, 탑 레벨에 코딩이 가능하다.
 var x = 5
 

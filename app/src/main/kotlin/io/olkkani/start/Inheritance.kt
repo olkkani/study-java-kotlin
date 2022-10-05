@@ -1,6 +1,4 @@
-package io.oikk.start
-
-import org.checkerframework.checker.units.qual.A
+package io.olkkani.start
 
 // open class 는 상속이 가능한 상태
 open class Dog {

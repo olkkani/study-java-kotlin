@@ -1,4 +1,4 @@
-package io.oikk.start
+package io.olkkani.start
 
 fun main () {
     // 범위 연산자 '..' 를 사용하여 for loop 를 돌릴 수 있다. 뒷 숫자까지 loop 가 돈다.

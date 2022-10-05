@@ -1,4 +1,4 @@
-package io.oikk.start
+package io.olkkani.start
 
 // 본문 내용이 없는 Class 를 선언할 수 있다.
 class EmptyClass

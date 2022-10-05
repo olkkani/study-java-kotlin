@@ -1,4 +1,4 @@
-package io.oikk.start
+package io.olkkani.start
 
 // java 로 구현된 null check 로직을 kotilin 으로 변환 (원본 java 파일은 강의 참고)
 // null 안정성이 java 보다 낫기 때문에 개발 단계에서 npe 이 발생하는 경우를 줄여줄 수 있다

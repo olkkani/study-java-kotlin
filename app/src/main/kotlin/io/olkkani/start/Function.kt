@@ -1,4 +1,4 @@
-package io.oikk.start
+package io.olkkani.start
 // 기본적인 함수 선언 스타일
 // 예약어fun 메소드명 (변수명: 타입, 변수명: 타입) : 반환타입 { body }
 fun sum (a: Int, b: Int) : Int{

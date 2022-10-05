@@ -1,4 +1,4 @@
-package io.oikk.start
+package io.olkkani.start
 
 // if 포현식은 java 의 if 와 다르게 return 이 가능하다
 const val age : Int = 10

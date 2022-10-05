@@ -1,4 +1,4 @@
-package io.oikk;
+package io.olkkani;
 
 import lombok.extern.slf4j.Slf4j;
 

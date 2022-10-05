@@ -1,4 +1,4 @@
-package io.oikk.start
+package io.olkkani.start
 
 class Product (val name: String, val price: Int)
 
