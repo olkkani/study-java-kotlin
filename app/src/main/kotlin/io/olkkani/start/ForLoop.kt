@@ -28,4 +28,9 @@ fun main () {
         println(i) // 1 2 3
     }
 
+    // for loop + index
+    for ((index, value) in numbers.withIndex()) {
+        println("index = ${index}, value = $value")
+    }
+
 }
