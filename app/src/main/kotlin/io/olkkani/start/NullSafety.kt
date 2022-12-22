@@ -23,6 +23,6 @@ fun main () {
     // 2. 개발자가 단언 연산자를 사용했음에도 null 변수가 들어있는 경우 npe가 발생한다.
     val c : String? = null
     val d = c!!.length
-
+    println(d)
     // 3. Java 코드와 상호 운영하는 경우 발생할 여지가 있다
 }
