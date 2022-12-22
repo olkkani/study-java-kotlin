@@ -1,4 +1,4 @@
-package io.olkkani.start.enumclass
+package io.olkkani.start.`class`
 // enum class 또한 class 이므로 기본 생성자를 선언할 수도 생략할 수도 있습니다.
 enum class PaymentStatus (val label: String): Payable{
     UNPAID("미지급") {
