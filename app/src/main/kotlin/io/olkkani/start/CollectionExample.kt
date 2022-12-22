@@ -103,7 +103,7 @@ fun mapExample(){
     // kotlin 에서는 최종 연산자를 사용하지 않아도 된다.
     val filteredList2 = upperList.filter { it == "A" || it == "C" }
     val filteredListByJava = upperList.stream().filter{it == "A" || it == "B"}.collect(Collectors.toList())
-    // sequence 는 처리 단계가 적어서 데이터가 많은 경우에 속도 최적화를 위해서 사용
+    // sequence 는 처리 단계가 적어서 데이터가 많은 경우에 최적화를 위해서 사용
     val filteredListByKotlinLikeJava = upperList.asSequence().filter { it == "A" || it == "C" }.toList()
     println(filteredList2)
     }
