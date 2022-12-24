@@ -14,7 +14,11 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
 }
-
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17.toString()
+    }
+}
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -49,5 +53,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass.set("io.oikk.AppKt")
+    mainClass.set("io.olkkani.AppKt")
 }
