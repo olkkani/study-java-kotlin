@@ -12,7 +12,7 @@ object Singleton {
 object DatetimeUtils {
     val now : LocalDateTime
         get() = LocalDateTime.now()
-
+    // const val 은 컴파일 val 은 런타임
     const val DEFAULT_FORMAT = "YYYY-MM-DD"
 
     fun same(a: LocalDateTime, b: LocalDateTime): Boolean {
