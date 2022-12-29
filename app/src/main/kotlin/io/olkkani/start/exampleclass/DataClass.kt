@@ -1,4 +1,4 @@
-package io.olkkani.start.`class`
+package io.olkkani.start.exampleclass
 
 // Class 를 생성하기 위해서는 data 라는 prefix 를 삽입한다
 // toString hashCode equals 를 생성
