@@ -24,7 +24,6 @@ object OtherDeveloper : Developer() {
     override val name: String = "익명"
 
     override fun code(language: Language) {
-        TODO("Not yet implemented")
     }
 }
 
