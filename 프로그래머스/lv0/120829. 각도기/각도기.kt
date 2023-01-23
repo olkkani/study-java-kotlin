@@ -1,14 +1,8 @@
 class Solution {
-    fun solution(angle: Int): Int {
-        val answer: Int = if (angle < 90){
-            1
-        } else if (angle == 90){
-            2
-        } else if (angle == 180){
-            4
-        } else {
-            3
-        }
-        return answer
+    fun solution(angle: Int): Int = when{
+        (angle in 1..89) -> 1
+        (angle == 90) -> 2
+        (angle == 180) -> 4
+        else -> 3
     }
 }
