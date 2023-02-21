@@ -1,10 +1,10 @@
 # [level 0] 가위 바위 보 - 120839 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120839) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120839?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 65.7 MB, 시간: 28.40 ms
+메모리: 63.7 MB, 시간: 12.01 ms
 
 ### 구분
 

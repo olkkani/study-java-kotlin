@@ -1,14 +1,9 @@
 class Solution {
-    fun solution(rsp: String): String {
-        var answer: StringBuilder = StringBuilder()
-        rsp.split("").forEach{
-            i -> when (i) {
-                "0" -> answer.append("5")
-                "2" -> answer.append("0")
-                "5" -> answer.append("2")
-                else -> answer.append("")
-            }
+    fun solution(rsp: String): String = rsp.map{
+        when (it) {
+            '0' -> "5"
+            '2' -> "0"
+            else -> "2"
         }
-        return answer.toString()
-    }
+    }.joinToString("")
 }
