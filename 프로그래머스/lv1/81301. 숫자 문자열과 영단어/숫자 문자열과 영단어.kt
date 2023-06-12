@@ -1,12 +1,21 @@
 class Solution {
-    fun solution(s: String): Int = s.replace("zero", "0")
-            .replace("one", "1")
-            .replace("two", "2")
-            .replace("three", "3")
-            .replace("four", "4")
-            .replace("five", "5")
-            .replace("six", "6")
-            .replace("seven", "7")
-            .replace("eight", "8")
-            .replace("nine", "9").toInt()
+    fun solution(s: String): Int {
+       var answer = s
+        val dict = mapOf(
+            "zero" to 0,
+            "one" to 1,
+            "two" to 2,
+            "three" to 3,
+            "four" to 4,
+            "five" to 5,
+            "six" to 6,
+            "seven" to 7,
+            "eight" to 8,
+            "nine" to 9
+        )
+        for ((k, v) in dict) {
+            answer = answer.replace(k, v.toString())
+        }
+        return answer.toInt()
+    }
 }
