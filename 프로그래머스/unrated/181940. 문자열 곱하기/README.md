@@ -1,10 +1,10 @@
 # [unrated] 문자열 곱하기 - 181940 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181940) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181940?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 62.4 MB, 시간: 2.48 ms
+메모리: 60.5 MB, 시간: 11.99 ms
 
 ### 구분
 
