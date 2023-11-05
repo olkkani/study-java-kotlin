@@ -1,10 +1,10 @@
 # [level 1] 하샤드 수 - 12947 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12947) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12947?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 62.4 MB, 시간: 0.02 ms
+메모리: 62 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 11월 0일 16:10:38
+2023년 11월 0일 16:11:58
 
 ### 문제 설명
 

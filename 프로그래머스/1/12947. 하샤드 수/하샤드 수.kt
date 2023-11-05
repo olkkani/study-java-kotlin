@@ -6,11 +6,11 @@ class Solution {
     private fun digitSum(number: Int): Int {
         var num = number
         var digitSum = 0
-        while (num > 1) {
+        while (num > 0) {
             digitSum += num % 10
             num /= 10
         }
 
-        return digitSum + num
+        return digitSum
     }
 }
