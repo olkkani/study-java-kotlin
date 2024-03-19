@@ -18,7 +18,19 @@ fun testPrint(answerOptionCodeAndValue: AnswerOptionCodeAndValue){
     println(answerOptionCodeAndValue.code)
     println(answerOptionCodeAndValue.value)
 }
+ fun convert(answerOptionCode: String): AnswerOptionCodeAndValue? {
+    return AnswerOptionCodeAndValue.values().firstOrNull(){it.code == answerOptionCode}
+}
 
 fun main() {
   testPrint(AnswerOptionCodeAndValue.OPTION_B)
+
+
+    val answerOption = convert("A")
+
+    println(answerOption!!.code)
+    println(answerOption!!.value)
+
+
+
 }
