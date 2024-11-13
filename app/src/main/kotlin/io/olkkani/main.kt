@@ -1,27 +1,30 @@
-import java.io.BufferedReader
-import java.io.InputStreamReader
-
-fun main() {
-    val br = BufferedReader(InputStreamReader(System.`in`))
-    val nums = mutableListOf<Int>()
-
-    for(i in 1 .. 28){
-        nums.add(br.readLine().toInt())
-    }
-
-    for(i in 1 .. 30){
-        if(!nums.contains(i)) {
-            println(i)
-        }
-    }
+package io.olkkani
+fun calculateIQR(data: List<Double>): Pair<Double, Double> {
+    val sortedData = data.sorted()
+    val q1 = sortedData[(sortedData.size * 0.25).toInt()]
+    val q3 = sortedData[(sortedData.size * 0.75).toInt()]
+    return Pair(q1, q3)
 }
 
-//fun main() {
-//    val variable = intArrayOf(1,2,3,4)
-//    val variable = 6
-//    val var2 = intArrayOf(1, 3, 2, 5, 4, 5, 2, 3)
-//    val result = Solution().solution(variable, var2)
-//    println(result)
-//    result.forEach { println(it) }
-//}
+fun detectOutliersUsingIQR(data: List<Double>): List<Double> {
+    val (q1, q3) = calculateIQR(data)
+    val iqr = q3 - q1
+    val lowerBound = q1 - 1.5 * iqr
+    val upperBound = q3 + 1.5 * iqr
+    return data.filter { it in lowerBound..upperBound }
+}
 
+fun calculateStatistics(data: List<Double>): Triple<Double, Double, Double> {
+    val filteredData = detectOutliersUsingIQR(data)
+    val min = filteredData.minOrNull() ?: Double.NaN
+    val max = filteredData.maxOrNull() ?: Double.NaN
+    val average = if (filteredData.isNotEmpty()) filteredData.average() else Double.NaN
+    return Triple(min, max, average)
+}
+
+fun main() {
+    val data = listOf(10.0, 12.0, 14.0, 15.0, 16.0, 18.0, 19.0, 21.0, 50.0, 100.0)
+    val (min, max, average) = calculateStatistics(data)
+    println("Filtered Data Statistics:")
+    println("Min: $min, Max: $max, Average: $average")
+}
