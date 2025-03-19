@@ -346,5 +346,5 @@ gradle-app.setting
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
-
+app/src/main/kotlin/io/olkkani/CodingTest.kt
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux,jetbrains+all,intellij+all,eclipse,java,kotlin,gradle
